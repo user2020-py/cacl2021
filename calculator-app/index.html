@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Welcome to | Calculator app</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body id="body">
+  <div class="container" id="container">
+    <div class="calc">
+      <div class="head" id="head">
+        <div id="logo"><h2 onclick="alert('Dasturchi - Matyoqubov Firdavs')">calc</h2></div>
+        <div class="switch-theme">
+          <span>theme</span>
+          <div id="switch">
+            <div id="themes"><span>1</span><span>2</span><span>3</span></div>
+            <div id="theme-btn" onclick="setClassname(); setTheme(theme)" class="theme1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="working-nums" id="wn">
+        <span id="result"></span>
+      </div>
+      <div class="keys" id="keys">
+        <table cellspacing=5>
+          <tr>
+            <td><div id="key1">7</div></td>
+            <td><div id="key2">8</div></td>
+            <td><div id="key3">9</div></td>
+            <td><div id="del">del</div></td>
+          </tr>
+          <tr>
+            <td><div id="key4">4</div></td>
+            <td><div id="key5">5</div></td>
+            <td><div id="key6">6</div></td>
+            <td><div id="key7">+</div></td>
+          </tr>
+          <tr>
+            <td><div id="key8">1</div></td>
+            <td><div id="key9">2</div></td>
+            <td><div id="key10">3</div></td>
+            <td><div id="key11">-</div></td>
+          </tr>
+          <tr>
+            <td><div id="key12">.</div></td>
+            <td><div id="key13">0</div></td>
+            <td><div id="key14">/</div></td>
+            <td><div id="key15">x</div></td>
+          </tr>
+          <tr>
+            <td class="reset"><div id="reset">reset</div></td>
+            <td class="calculate"><div id="calculate">=</div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="script/theme.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
